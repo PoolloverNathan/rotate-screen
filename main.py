@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# main: a program that flips the computer's screen(s) past a certain
+# main: a program that rotates the computer's screen(s) past a certain
 # hour. See README.md for usage.
 # Assumes the computer will be turned off during the night (i.e. doesn't get
 # the screen(s) back to normal; can be tweaked for this purpose, though).
@@ -29,7 +29,7 @@ while True:
         # meanwhile. But no big deal: this would only delay the inversion by 
         # check_every in the worst case).
         time.sleep(allowedtime)
-        invscr.invscr()  # flip the screen(s)
+        invscr.invscr()  # rotate the screen(s)
 
     # sleep a little (to spare CPU).
     time.sleep(check_every)
